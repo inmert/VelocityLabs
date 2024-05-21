@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BAD79A92BFCD85F00B9EABE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1BAD79A82BFCD85F00B9EABE /* FirebaseAuth */; };
+		1BAD79AB2BFCD85F00B9EABE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1BAD79AA2BFCD85F00B9EABE /* FirebaseFirestore */; };
+		1BAD79AD2BFCD85F00B9EABE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1BAD79AC2BFCD85F00B9EABE /* FirebaseFirestoreSwift */; };
 		1BB71A3A2BFC7C3F00AF972A /* VelocityLabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB71A392BFC7C3F00AF972A /* VelocityLabsApp.swift */; };
 		1BB71A3C2BFC7C3F00AF972A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB71A3B2BFC7C3F00AF972A /* ContentView.swift */; };
 		1BB71A3E2BFC7C3F00AF972A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB71A3D2BFC7C3F00AF972A /* Item.swift */; };
@@ -28,6 +31,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BAD79A92BFCD85F00B9EABE /* FirebaseAuth in Frameworks */,
+				1BAD79AB2BFCD85F00B9EABE /* FirebaseFirestore in Frameworks */,
+				1BAD79AD2BFCD85F00B9EABE /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,11 @@
 			dependencies = (
 			);
 			name = VelocityLabs;
+			packageProductDependencies = (
+				1BAD79A82BFCD85F00B9EABE /* FirebaseAuth */,
+				1BAD79AA2BFCD85F00B9EABE /* FirebaseFirestore */,
+				1BAD79AC2BFCD85F00B9EABE /* FirebaseFirestoreSwift */,
+			);
 			productName = VelocityLabs;
 			productReference = 1BB71A362BFC7C3F00AF972A /* VelocityLabs.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 1BB71A2D2BFC7C3F00AF972A;
+			packageReferences = (
+				1BAD79A72BFCD85F00B9EABE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1BB71A372BFC7C3F00AF972A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,16 +287,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VelocityLabs/Preview Content\"";
+				DEVELOPMENT_TEAM = G46Z332VDE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Velocity;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +307,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = inmert.VelocityLabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,16 +323,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VelocityLabs/Preview Content\"";
+				DEVELOPMENT_TEAM = G46Z332VDE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Velocity;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +343,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = inmert.VelocityLabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,6 +376,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BAD79A72BFCD85F00B9EABE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BAD79A82BFCD85F00B9EABE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BAD79A72BFCD85F00B9EABE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1BAD79AA2BFCD85F00B9EABE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BAD79A72BFCD85F00B9EABE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		1BAD79AC2BFCD85F00B9EABE /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BAD79A72BFCD85F00B9EABE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BB71A2E2BFC7C3F00AF972A /* Project object */;
 }
